@@ -24,7 +24,9 @@
     transform: rotate(360deg);
   }
 }
-
+.canDisable:disabled {
+  background-color: #333;
+}
 hr.simple-hr {
   border: 0;
   height: 2px;
