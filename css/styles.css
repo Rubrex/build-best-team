@@ -7,6 +7,23 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.animatedBall img {
+  position: absolute;
+  top: -71%;
+  left: -8%;
+  animation: rotate 20s linear infinite;
+  transform-origin: 50% 50%;
+  opacity: 0.4;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 hr.simple-hr {
   border: 0;
   height: 2px;

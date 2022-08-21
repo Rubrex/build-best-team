@@ -25,6 +25,7 @@
               primaryColor: "#1e293b",
               btnColor: "#0078AA",
               btnHover: "#495C83",
+              headerColor: "#355764",
             },
           },
         },
@@ -33,14 +34,22 @@
   </head>
   <body class="bg-primaryBackground text-ourTextPrimary montserrat">
     <!-- Heading Section -->
-    <header class="bg-slate-400">
-      <div class="py-16 text-center">
-        <h1 class="text-7xl bangers">Select Your Best Five</h1>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
+    <header class="bg-headerColor relative overflow-hidden">
+      <!-- Animated Football -->
+      <div class="animatedBall text-center">
+        <img src="assets/images/football.png" alt="" class="z-10" />
+      </div>
+      <!-- Text Contents -->
+      <div class="relative z-20">
+        <!-- Center Header Text -->
+        <div class="py-32 text-center">
+          <h1 class="text-7xl bangers">Select Your Best Five</h1>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
       </div>
     </header>
     <!-- main Section -->
@@ -243,6 +252,7 @@
       </div>
     </main>
     <hr class="simple-hr" />
+    <!-- Footer Section -->
     <footer class="text-center py-14">
       <p>Copyright @ 2022 All Rights Reserved.</p>
     </footer>
