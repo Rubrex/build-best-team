@@ -13,3 +13,6 @@ hr.simple-hr {
   background: #333;
   background-image: linear-gradient(to right, #333, #ccc, #333);
 }
+.ul-list {
+  line-height: 40px;
+}
