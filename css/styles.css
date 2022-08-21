@@ -11,7 +11,7 @@
   position: absolute;
   top: -71%;
   left: -8%;
-  animation: rotate 20s linear infinite;
+  animation: rotate 30s linear infinite;
   transform-origin: 50% 50%;
   opacity: 0.4;
 }
