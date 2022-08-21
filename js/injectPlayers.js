@@ -36,7 +36,7 @@ const playersData = [
     profileImage: "assets/players/player-9.png",
   },
 ];
-const injectInside = document.getElementById("injectInside");
+const injectInside = document.getElementById("cardsContainer");
 
 for (const player of playersData) {
   const div = document.createElement("div");
