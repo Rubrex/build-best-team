@@ -40,35 +40,39 @@
     <!-- main Section -->
     <main>
       <div class="container mx-auto mt-16">
-        <!-- Cards Parent Container -->
+        <!--  Parent Container -->
         <div class="grid grid-cols-4 gap-6">
-          <!-- Each Card -->
-          <div class="bg-primaryColor">
-            <!-- Top Image -->
-            <div>
-              <img
-                src="assets/players/player-1.png"
-                alt=""
-                class="w-full h-full"
-              />
-            </div>
-            <!-- Bottom Descriptions -->
-            <div class="text-center">
-              <h2 class="text-xl font-semibold py-3">Lionel Messi</h2>
-              <div
-                class="flex justify-around items-center text-ourTextSecondary w-2/3 mx-auto"
-              >
-                <p>35 Goals</p>
-                <span>-</span>
-                <p>127 Assist</p>
+          <!-- Cards Container -->
+          <div class="col-span-3 grid grid-cols-3">
+            <!-- Each Card -->
+            <div class="bg-primaryColor">
+              <!-- Top Image -->
+              <div>
+                <img
+                  src="assets/players/player-1.png"
+                  alt=""
+                  class="w-full h-full"
+                />
               </div>
-              <button
-                class="bg-btnColor hover:ring ring-btnHover w-4/5 m-5 py-2 rounded-sm font-medium"
-              >
-                SELECT
-              </button>
+              <!-- Bottom Descriptions -->
+              <div class="text-center">
+                <h2 class="text-xl font-semibold py-3">Lionel Messi</h2>
+                <div
+                  class="flex justify-around items-center text-ourTextSecondary w-2/3 mx-auto"
+                >
+                  <p>35 Goals</p>
+                  <span>-</span>
+                  <p>127 Assist</p>
+                </div>
+                <button
+                  class="bg-btnColor hover:ring ring-btnHover w-4/5 m-5 py-2 rounded-sm font-medium"
+                >
+                  SELECT
+                </button>
+              </div>
             </div>
           </div>
+          <!-- SideBar Container -->
         </div>
       </div>
     </main>
