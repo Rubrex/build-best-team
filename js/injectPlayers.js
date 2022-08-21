@@ -61,7 +61,7 @@ for (const player of playersData) {
             <p>127 Assist</p>
             </div>
             <button
-            class="bg-btnColor hover:ring ring-btnHover w-4/5 m-5 py-2 rounded-sm font-medium canDisable"
+            class="bg-btnColor disabled:ring-0 hover:ring active:bg-slate-500 ring-btnHover w-4/5 m-5 py-2 rounded-sm font-medium canDisable"
             >
             SELECT
             </button>
