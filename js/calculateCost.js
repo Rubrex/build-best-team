@@ -9,6 +9,7 @@ const managerCost = document.getElementById("manager");
 const coachCost = document.getElementById("coach");
 // Text Fields
 const playersCost = document.getElementById("playersCost");
+const grandTotal = document.getElementById("grandTotal");
 // Buttons
 const calculateTotal = document.getElementById("calculateTotal");
 const calculatePlayersCost = document.getElementById("calculatePlayersCost");
@@ -61,4 +62,13 @@ calculatePlayersCost.addEventListener("click", function () {
     return;
   }
   playersCost.innerText = totalCost;
+});
+
+// Calculate Total Cost
+calculateTotal.addEventListener("click", function () {
+  const manager = getInputValue(managerCost);
+  const coach = getInputValue(coachCost);
+  const playersExpenses = parseInt(playersCost.innerText);
+  const totalExpenses = parseInt(manager + coach + playersExpenses);
+  grandTotal.innerText = totalExpenses;
 });
