@@ -57,9 +57,9 @@ calculatePlayersCost.addEventListener("click", function () {
   const playersCount = selectedListsParent.childNodes.length;
   const playerCost = getInputValue(perPlayer);
   const totalCost = playerCost * playersCount;
-  //   ignore NaN value
+  //   ignore NaN value & empty input field
   if (isNaN(totalCost)) {
-    return;
+    return alert("Give some money to the Players");
   }
   playersCost.innerText = totalCost;
 });
@@ -70,5 +70,9 @@ calculateTotal.addEventListener("click", function () {
   const coach = getInputValue(coachCost);
   const playersExpenses = parseInt(playersCost.innerText);
   const totalExpenses = parseInt(manager + coach + playersExpenses);
+  //   ignore NaN value & empty input field
+  if (isNaN(manager) || isNaN(coach)) {
+    return alert("Give both Coach and Manager their living costs");
+  }
   grandTotal.innerText = totalExpenses;
 });
