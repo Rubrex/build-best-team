@@ -1,5 +1,17 @@
 const playersData = [
   {
+    name: "Erling Haaland",
+    profileImage: "assets/players/player-7.jpg",
+  },
+  {
+    name: "Mesut Özil",
+    profileImage: "assets/players/player-8.jpg",
+  },
+  {
+    name: "Renato Sanches",
+    profileImage: "assets/players/player-9.png",
+  },
+  {
     name: "Lionel Messi",
     profileImage: "assets/players/player-1.png",
   },
@@ -23,18 +35,6 @@ const playersData = [
     name: "Atalayar Riyad Mahrez",
     profileImage: "assets/players/player-6.jpg",
   },
-  {
-    name: "Erling Haaland",
-    profileImage: "assets/players/player-7.jpg",
-  },
-  {
-    name: "Mesut Özil",
-    profileImage: "assets/players/player-8.jpg",
-  },
-  {
-    name: "Renato Sanches",
-    profileImage: "assets/players/player-9.png",
-  },
 ];
 const injectInside = document.getElementById("cardsContainer");
 
@@ -52,7 +52,7 @@ for (const player of playersData) {
         </div>
         <!-- Bottom Descriptions -->
         <div class="text-center">
-            <h2 class="text-xl font-semibold py-3" id="playerName">${player.name}</h2>
+            <h2 class="text-xl font-semibold py-3" >${player.name}</h2>
             <div
             class="flex justify-around items-center text-ourTextSecondary w-2/3 mx-auto"
             >
